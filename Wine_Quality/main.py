@@ -9,4 +9,7 @@ wine = np.genfromtxt("winequality-red.csv", delimiter=";", skip_header=1)
 print(wines)
 print(wine)
 
+high_quality = wines[:,11] > 7
+print(wines[high_quality,:][:3,:])
+
 #print(wines.shape)
